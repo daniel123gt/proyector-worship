@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <meta name="apple-mobile-web-app-title" content="Worship">
+    <meta name="theme-color" content="#1f2937">
+    <link rel="manifest" href="manifest.json">
+    <link rel="apple-touch-icon" href="icon-180.png">
+    <title>Worship Local</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div class="topbar">
+        <h1>Worship Local</h1>
+
+        <button class="live-btn">
+            GO LIVE
+        </button>
+    </div>
+
+    <div class="tabs">
+
+        <button id="slidesTab" class="tab active">
+            Slides
+        </button>
+
+        <button id="bibleTab" class="tab">
+            Bible
+        </button>
+
+    </div>
+
+    <div class="main">
+
+        <!-- PANEL IZQUIERDO -->
+
+        <div class="left-panel">
+
+            <!-- MODULO SLIDES -->
+
+            <div id="slidesPanel">
+
+                <h2>Slide List</h2>
+
+                <div class="slide-grid">
+
+                    <div class="slide">
+                        Imagen 1
+                    </div>
+
+                    <div class="slide">
+                        Imagen 2
+                    </div>
+
+                    <div class="slide add-photo">
+                        + Add Photo
+                    </div>
+
+                </div>
+
+            </div>
+
+            <!-- MODULO BIBLE -->
+
+            <div id="biblePanel" style="display:none;">
+
+                <h2>Bible</h2>
+
+                <label>Testamento</label>
+                <select id="testamentSelect">
+                    <option>Todos</option>
+                    <option>Antiguo Testamento</option>
+                    <option>Nuevo Testamento</option>
+                </select>
+
+                <br><br>
+
+                <label>Libro</label>
+                <select id="bookSelect">
+
+                    <option>
+                        Cargando...
+                    </option>
+
+                </select>
+
+                <br><br>
+
+                <label>Capítulo</label>
+                <select id="chapterSelect">
+                    <option>
+                        Seleccione libro
+                    </option>
+                </select>
+
+                <br><br>
+
+                <label>Versículo</label>
+                <select id="verseSelect">
+                    <option>
+                        Seleccione capítulo
+                    </option>
+                </select>
+
+                <br><br>
+
+                <button id="projectBibleBtn">
+                    PROYECTAR
+                </button>
+
+                <br><br>
+
+                <div
+                    id="bibleBackgroundPreview"
+                    class="slide"
+                    style="
+                        height:120px;
+                        background:#374151;
+                        background-size:cover;
+                        background-position:center;
+                    "
+                >
+                    Sin fondo
+                </div>
+
+
+                <br><br>
+
+                <div class="slide add-photo" id="bibleBackgroundBtn">
+                    + Fondo Biblia
+                </div>
+
+            </div>
+
+        </div>
+
+        <!-- PANEL DERECHO -->
+
+        <div class="right-panel">
+
+            <h2>Preview</h2>
+
+            <div class="preview">
+
+                Seleccione contenido
+
+            </div>
+
+        </div>
+
+    </div>
+
+    <script src="app.js"></script>
+
+</body>
+
+</html>
